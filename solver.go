@@ -36,5 +36,4 @@ func Solve(board *[][]int) {
 		}
 		fmt.Println()
 	}
-	fmt.Println()
 }
