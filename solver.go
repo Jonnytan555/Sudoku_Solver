@@ -24,11 +24,14 @@ func Solve(board *[][]int) {
 			}
 		}
 	}
-	
+
 	for i, line := range *board {
 		for j := range line {
-			fmt.Printf("%v", (*board)[i][j])
-			fmt.Print(" ")
+			if j != len(line)-1 {
+				fmt.Printf("%v ", (*board)[i][j])
+			} else {
+				fmt.Printf("%v", (*board)[i][j])
+			}
 
 		}
 		fmt.Println()
